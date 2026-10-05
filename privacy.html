@@ -1,0 +1,284 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keeping Kin Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+
+<style>
+  :root {
+    --ground: #faf8f3;
+    --surface: #ffffff;
+    --raised: #f0f1eb;
+    --ink: #1f2a22;
+    --muted: #687069;
+    --green: #2f5d3a;
+    --green-soft: rgba(47, 93, 58, 0.09);
+    --warm: #c9784a;
+    --attention: #d8ad57;
+    --divider: #d9ddd5;
+    --display: "Bricolage Grotesque", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --body: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #111512;
+      --surface: #181d19;
+      --raised: #222824;
+      --ink: #eef2ed;
+      --muted: #a9b1aa;
+      --green: #6fa47c;
+      --green-soft: rgba(111, 164, 124, 0.14);
+      --warm: #d68a5c;
+      --attention: #d7b96e;
+      --divider: #343c36;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #111512;
+    --surface: #181d19;
+    --raised: #222824;
+    --ink: #eef2ed;
+    --muted: #a9b1aa;
+    --green: #6fa47c;
+    --green-soft: rgba(111, 164, 124, 0.14);
+    --warm: #d68a5c;
+    --attention: #d7b96e;
+    --divider: #343c36;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .masthead {
+    border-bottom: 1px solid var(--divider);
+    background: var(--ground);
+  }
+
+  .shell {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-inline: 20px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-block: 18px;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .brand svg { display: block; }
+
+  main { padding-block: 44px 72px; }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(2rem, 6vw, 2.7rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .stamp {
+    font-size: 15px;
+    color: var(--muted);
+    margin: 0 0 36px;
+  }
+
+  h2 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.28rem;
+    letter-spacing: -0.015em;
+    line-height: 1.25;
+    margin: 44px 0 12px;
+    text-wrap: balance;
+  }
+
+  h2::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--green);
+    margin-bottom: 14px;
+  }
+
+  p { margin: 0 0 16px; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0 0 16px;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  li {
+    position: relative;
+    padding-left: 24px;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 0.62em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+  }
+
+  strong { font-weight: 600; }
+
+  a { color: var(--green); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; border-radius: 3px; }
+
+  .summary {
+    background: var(--green-soft);
+    border-radius: 16px;
+    padding: 24px 24px 26px;
+    margin-bottom: 8px;
+  }
+
+  .summary h2 {
+    margin-top: 0;
+    font-size: 1.05rem;
+  }
+
+  .summary h2::before { display: none; }
+
+  .summary ul { margin-bottom: 0; }
+
+
+
+  .fill {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.88em;
+    background: var(--raised);
+    border: 1px solid var(--divider);
+    border-radius: 5px;
+    padding: 1px 6px;
+  }
+
+  footer {
+    border-top: 1px solid var(--divider);
+    color: var(--muted);
+    font-size: 15px;
+    padding-block: 24px 40px;
+  }
+
+  footer a { color: var(--muted); }
+</style>
+
+<header class="masthead">
+  <div class="shell">
+    <a class="brand" href="./">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M20 3.5c0 8-4.8 13-10.2 13A5.8 5.8 0 0 1 4 10.7C4 6.4 8.9 3.5 20 3.5Z" fill="var(--green)"/>
+        <path d="M17 6.5C11.5 8.6 7.8 12.9 5.6 20.5" stroke="var(--ground)" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      Keeping Kin
+    </a>
+  </div>
+</header>
+
+<main class="shell">
+  <h1>Privacy Policy</h1>
+  <p class="stamp">Last updated 22 September 2026</p>
+
+  <div class="summary">
+    <h2>In short</h2>
+    <ul>
+      <li>Kin keeps what you record on your iPhone and in <strong>your own iCloud account</strong>.</li>
+      <li>We cannot see your medications, your dose history or anyone's name. There is no Kin server.</li>
+      <li>Nothing is sold, shared with advertisers or used for tracking. There are no analytics.</li>
+      <li>When you invite a helper, only the people you invite can see that person's circle.</li>
+    </ul>
+  </div>
+
+  <h2>Who this is about</h2>
+  <p>Keeping Kin ("Kin") is an app for families looking after someone together. It records medications, when doses were taken, appointments and useful contacts, so everyone helping can see the same picture.</p>
+  <p>Keeping Kin is made by <span class="fill">DEVELOPER NAME</span>, an independent developer. This policy explains what the app records and where it goes.</p>
+
+  <h2>What Kin records</h2>
+  <p>Only what you type in:</p>
+  <ul>
+    <li>The name of the person being cared for, and optionally their date of birth, allergies and notes.</li>
+    <li>Medications: name, strength, form, instructions, schedule and how much is left.</li>
+    <li>Dose history: whether each dose was taken or skipped, when, and the first name of whoever recorded it.</li>
+    <li>Appointments and contacts you add, including any phone numbers you enter.</li>
+    <li>The name you give yourself, so the family can tell who recorded what.</li>
+  </ul>
+  <p>Some of this is health information about another person. Treat it the way you would their medical notes, and only add what you need.</p>
+
+  <h2>Where it is kept</h2>
+  <p>Everything is stored on your device. If you are signed in to iCloud, it also syncs through <strong>your own iCloud account</strong>, using Apple's CloudKit, so your own devices stay in step.</p>
+  <p>That data sits in your private iCloud storage. It is governed by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a> and counts against your iCloud storage, not ours.</p>
+  <p><strong>There is no Kin server, and we have no account system.</strong> We cannot read, copy or recover anything you record. If you lose access to your iCloud account, we cannot help you get your data back.</p>
+
+  <h2>Inviting helpers</h2>
+  <p>You can share a circle with family or friends. Sharing is handled by Apple's CloudKit sharing: the people you invite can see and add to that circle from their own devices.</p>
+  <p>An invitation link gives access to anyone who opens it, so send it only to people you mean to invite. You can see who has joined, and remove someone, on the Helpers screen. Removing a helper cuts off their access to future changes.</p>
+  <p>Helpers see the person's details, medications, dose history, appointments and contacts for that circle, and the first names of everyone recording doses.</p>
+
+  <h2>Reminders</h2>
+  <p>If you turn reminders on, Kin schedules notifications on your device. They are created and delivered locally by your iPhone. No reminder is sent through a server, and nothing about them leaves your device.</p>
+
+  <h2>What Kin does not do</h2>
+  <ul>
+    <li>No advertising, and no advertising identifiers.</li>
+    <li>No analytics, crash reporting or usage tracking of any kind.</li>
+    <li>No third-party software development kits that collect data.</li>
+    <li>No selling or sharing of personal information.</li>
+    <li>No tracking across other apps or websites.</li>
+  </ul>
+
+  <h2>Deleting your data</h2>
+  <p>You are in control of all of it:</p>
+  <ul>
+    <li>Remove a person from the Circles screen and everything recorded about them is deleted, including medications, dose history, appointments and contacts. Helpers lose access.</li>
+    <li>Delete the app to remove what is on that device.</li>
+    <li>In the Settings app, under your name, then iCloud, you can manage or delete what Kin has stored in your iCloud account.</li>
+  </ul>
+  <p>Because we hold nothing, there is nothing for you to request from us and nothing for us to delete on your behalf.</p>
+
+  <h2>Children</h2>
+  <p>Kin is meant for adults looking after someone. It is not directed at children, and we do not knowingly collect anything from them. You may of course record care details about a child you look after; that information is treated exactly like any other entry, and stays in your own iCloud.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top changes with it. Anything that meaningfully affects what the app records will also be mentioned in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy, or about this policy, can go to <a href="mailto:audhumbla3000@gmail.com">audhumbla3000@gmail.com</a>. We answer as quickly as one person reasonably can.</p>
+
+</main>
+
+<footer class="shell">
+  <p>Keeping Kin &middot; Privacy Policy &middot; Last updated 22 September 2026</p>
+</footer>
